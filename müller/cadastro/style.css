@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.img{
+    width: 470px;
+    height: 600px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:  2px;
+    border-bottom-left-radius: 2px;
+}
+
+html{   
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    box-shadow: #b7b7b7 6px 6px 30px;
+}
+
+.Cadastro{
+    width: 500px;
+    height: 600px;
+    background-color: #f1f1f1;
+    padding: 2.2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: #333030;
+   
+}
+
+.form-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Cadastro h1{
+    font-size: 3rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    margin-left: 7px;
+}
+
+.Cadastro h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    background-color: #637879;
+    height: 0.5rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+
+
+.cadastro-button{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cadastro-button button{
+    background-color: #637879;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.cadastro-button button a {
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+
+
+
+.Cadastro input{
+    margin-top: 7px;
+    width: 97%;
+    margin-bottom: 10px;
+    padding: 11px ;
+    border: #333030 solid 0.5px;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+    border-radius: 2px;
+    outline: #4f4f4f;
+}
+
+.inputs{
+    margin-top: 0px;
+}
+
+
+.boxnome{
+    display: flex;
+}
+
+.boxnome input{
+    margin-bottom: 10px;
+    margin: 7px;
+    padding: 11px ;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.boxsenha{
+    display: flex;
+}
+
+.boxsenha input{
+    margin-bottom: 10px;
+    margin: 7px;
+    padding: 11px ;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.boxcpfaniversario{
+    display: flex;
+}
+
+.boxcpfaniversario input{
+
+    margin: 7px;
+    padding: 11px ;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.Cadastro #Email{
+    width: 97%;
+    margin-left: 7px;
+}
+
+.Cadastro #Endereco{
+    width: 97%;
+    margin-left: 7px;
+}
+
+
+.boxend{
+    display: flex;
+    margin: 7px;
+    margin-top: 3px;
+}
+
+.boxend #Endereco{
+    margin-right: 11px;
+    margin-left: 0px;
+}
+
+.boxend #numrua{
+    width: 20%;
+}
+
+.boxcep-bairro{
+    display: flex;
+    margin-top: -7px;
+}
+
+.boxcep-bairro input{
+    margin: 7px;
+    padding: 11px ;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.boxcomple-est{
+    display: flex;
+    margin: 7px;
+    margin-top: 3px;
+}
+
+.Cadastro #Complemento{
+    width: 97%;
+    margin-left: 7px;
+}
+
+.boxcomple-est #Estado{
+    width: 20%;
+}
+
+.boxcomple-est #Complemento{
+    margin-right: 11px;
+    margin-left: 0px;
+}
+
+
+
+/*button*/
+.button button{
+    margin-top: 20px;
+    width: 97%;
+    margin-left: 7px;
+    height: 4rem;
+    cursor: pointer;
+    background-color: #333030;
+    color: #DFDFDF;
+    border: none;
+    border-radius: 2px;
+    transition: 300ms ease ;
+}
+
+.button button:hover{
+    margin-top: 20px;
+    width: 97%;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 5.3rem;
+    cursor: pointer;
+    background-color: #4f4f4f;
+    color: #DFDFDF;
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+
+@media screen and (max-width: 1330px){
+    .img{
+        display: none;     
+    }
+
+    .Cadastro{
+        
+        width: 100%;
+    }
+
+}    
+
+@media screen and (max-width: 1090px){
+
+    .Cadastro {
+        width: 120%;
+        height: auto;
+        max-height: 550px;
+    }
+    
+    .inputs{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 157px;
+    }
+
+
+    .boxnome, .boxsenha, .boxcpfaniversario, .boxend, .boxcep-bairro, .boxcomple-est ,#Email{
+        flex-direction: column;
+        width: 270px;
+    }
+
+    .boxend #numrua{
+        width: 100%;
+    }
+
+    .boxend #Endereco{
+        width: 100%;
+    }
+
+    .Cadastro #Email{
+        width: 95%;
+    }
+    
+    .boxcomple-est #Estado{
+        width: 100%;
+    }
+
+    .boxcomple-est #Complemento{
+        width: 100%;
+    }
+
+    .button{
+        margin-top: -7px;
+    }
+
+} 
+
+
+
